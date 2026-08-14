@@ -1,3 +1,8 @@
+def add_task(tasks_list, task_name):
+    """Adds a new task to the provided list."""
+    new_task = {"title": task_name, "status": "Pending"}
+    tasks_list.append(new_task)
+    return tasks_list
 def main():
     tasks = []
 
