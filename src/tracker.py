@@ -12,7 +12,9 @@ def main():
         choice = input("Choose an option: ")
 
         if choice == '1':
-            print("Add feature coming soon!")
+            task_name = input("Enter the task description: ")
+            tasks.append({"title": task_name, "status": "Pending"})
+            print(f"Task '{task_name}' added successfully!")
         elif choice == '5':
             print("Exiting tracker...")
             break
